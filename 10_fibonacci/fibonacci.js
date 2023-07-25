@@ -1,7 +1,7 @@
 const fibonacci = function(num) {
     let currentNum = 1; let array =[1,1,]; 
     let prevNum = 1; let nextNum = 0;
-    if (num > 0 && typeof num === 'number') {
+    if (num > 0) {
         for (let i = 0; i <= (num - 3); i++){
             nextNum = currentNum  + prevNum;
             array.push(nextNum);
@@ -10,8 +10,7 @@ const fibonacci = function(num) {
         }
         // console.log(array);
         return array[num - 1];
-    } else return 'OOPS!';
-    
+    } else return 'OOPS';
 };
 
 console.log(fibonacci(4));
